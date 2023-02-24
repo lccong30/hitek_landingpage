@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@200;300;400;500;700&display=swap');
+
+
 html {
   box-sizing: border-box;
 }
@@ -103,7 +106,7 @@ input {
 
 @media screen and (max-width: 767px) {
   .heading {
-    font-size: 24px;
+    font-size: 23px;
   }
 }
 
@@ -195,6 +198,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
 }
 
 /* .hero .hero-img {
@@ -210,6 +214,7 @@ input {
 .banner-content {
   display: flex;
   flex-direction: column;
+  width: 50%;
   gap: 10px;
 }
 
@@ -233,7 +238,7 @@ input {
 }
 
 .banner-img {
-  width: 60%;
+  width: 49%;
   /* margin-right: -100px; */
 }
 
@@ -345,6 +350,10 @@ input {
   .hero-link {
     font-size: 16px;
   }
+
+  .banner-content {
+    width: 100%;
+  }
 }
 
 header {
@@ -453,7 +462,7 @@ header {
 
 }
 
-.brand-list p {
+.brand-list div {
   padding: 20px 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
@@ -531,6 +540,7 @@ header {
 
 .team {
   background-color: var(--gray-lighter);
+  margin-bottom: 150px;
 }
 
 .team-main {
@@ -549,7 +559,7 @@ header {
 
 .team-info>h2 {
   padding-top: 140px;
-  margin-bottom: 30px;
+
 }
 
 .team-info>p {
@@ -603,6 +613,10 @@ header {
 
   .team-image img {
     width: 100%;
+  }
+
+  .team-info>h2 {
+    margin-bottom: 30px;
   }
 }
 
@@ -800,9 +814,9 @@ header {
   margin-bottom: 30px;
 }
 
-.footer-info p:nth-child(2) {
+/* .footer-info p:nth-child(2) {
   margin-bottom: 50px;
-}
+} */
 
 .footer-logo-inner {
   display: flex;
@@ -881,4 +895,190 @@ header {
     line-height: 1.8;
     text-align: center;
   }
+}
+
+
+
+
+/* ------------------------------------------------------- intro -------------------------------------------------------  */
+.intro {
+  min-height: 1000px;
+  padding: 20px;
+  background-color: #ddd;
+  /* margin-bottom: 150px; */
+
+}
+
+.intro__content h2 {
+  font-size: 110px;
+  margin: 35px 0;
+  font-family: 'Great Vibes', cursive;
+  color: black
+}
+
+.intro__info {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__info div {
+  font-size: 20px;
+}
+
+.intro__content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.intro__content-heading {
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 767px) {
+  .intro__content h2 {
+    font-size: 65px;
+  }
+
+  .intro__info div {
+    font-size: 16px;
+  }
+
+  .intro {
+    min-height: 700px;
+  }
+
+
+}
+
+/* ------------------------------------------------------- intro -------------------------------------------------------  */
+
+
+
+
+.read-more-container {
+  display: flex;
+  flex-direction: column;
+  color: #111;
+  gap: 1rem;
+}
+
+.read-more-wrapper {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 2px;
+  line-height: 1.4rem;
+}
+
+.read-more-btn {
+  color: #0984e3;
+  cursor: pointer;
+}
+
+.read-more-text {
+  display: none;
+  transition: all;
+}
+
+.read-more-text--show {
+  display: inline;
+  transition: all;
+}
+
+.showtotop,
+.zoomshow {
+  opacity: 0;
+}
+
+
+.active.showtotop {
+  animation: showtop 1s ease-in-out 1 forwards;
+}
+
+.active .zoomshow {
+  animation: zoomshow 1s ease-in-out 1 forwards;
+}
+
+@keyframes zoomshow {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes showtop {
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+
+.delay-02 {
+  animation-delay: 0.2s !important;
+}
+
+.delay-04 {
+  animation-delay: 0.4s !important;
+}
+
+.delay-06 {
+  animation-delay: 0.6s !important;
+}
+
+.delay-08 {
+  animation-delay: 0.8s !important;
+}
+
+.delay-1 {
+  animation-delay: 1s !important;
+}
+
+.delay-12 {
+  animation-delay: 1.2s !important;
+}
+
+.delay-14 {
+  animation-delay: 1.4s !important;
+}
+
+.delay-16 {
+  animation-delay: 1.6s !important;
+}
+
+.delay-18 {
+  animation-delay: 1.8s !important;
+}
+
+.delay-2 {
+  animation-delay: 2s !important;
+}
+
+.delay-12 {
+  animation-delay: 1.2s !important;
+}
+
+.delay-14 {
+  animation-delay: 1.4s !important;
+}
+
+.delay-16 {
+  animation-delay: 1.6s !important;
+}
+
+.delay-18 {
+  animation-delay: 1.8s !important;
 }

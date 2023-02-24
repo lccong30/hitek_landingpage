@@ -6,9 +6,10 @@ button {
     cursor: pointer;
 }
 
+/* 
 body {
     padding: 20px;
-}
+} */
 
 .image-slider {
     padding-bottom: 50px;
@@ -49,7 +50,17 @@ body {
         margin: 0 10px;
         height: 150px;
     }
+
+    /* .slick-prev {
+        left: -20px;
+    }
+
+    .slick-next {
+        right: -20px;
+    } */
 }
+
+
 
 
 .slick-slide img {
@@ -93,6 +104,20 @@ body {
 .slick-next {
     right: -40px;
 }
+
+@media screen and (max-width: 767px) {
+
+
+    .slick-prev {
+        left: 0px;
+    }
+
+    .slick-next {
+        right: -8px;
+    }
+}
+
+
 
 .slick-dots {
     position: absolute;
